@@ -21,7 +21,7 @@
     <div class="wrapper">
         <!-- Шапка (grid - элемент) -->
         <header class="header">
-            <a href="" class="header__logo"></a>
+            <a href="" class="header__logo"><img src="img/logo.png" alt="" width="70px" height="70px"></a>
             <nav class="header__menu">
                 <ul class="header__list">
                     <li><a href="index.html" class="header__link">Главная</a></li>
@@ -29,26 +29,62 @@
                     <li><a href="review.html" class="header__link">Отзывы</a></li>
                     <li><a href="news.html" class="header__link">Новости </a></li>
                     <li><a href="signin.html" class="header__link">Войти</a></li>
+
                 </ul>
             </nav>
         </header><!-- Сайдбар (grid-элемент) -->
         <aside class="sidebar">
             <nav class="sidebar__menu">
                 <ul class="sidebar__list">
-                    <div class="link">
-                        <li><a href="" class="sidebar__link">Пункт меню</a></li>
+                    <div class="dropdown link">
+                        <li>
+                            <button onclick="myFunction1()" class="dropbtn link">Для мужчин</button>
+                            <div id="myDropdown1" class="dropdown-content">
+                                <a href="#">Дэмисезон</a>
+                                <a href="#">Лето</a>
+                                <a href="#">Зима</a>
+                            </div>
+                        </li>
                     </div>
-                    <div class="link">
-                        <li><a href="" class="sidebar__link">Пункт меню</a></li>
+                    <div class="dropdown link">
+                        <li>
+                            <button onclick="myFunction2()" class="dropbtn link">Для женщин</button>
+                            <div id="myDropdown2" class="dropdown-content">
+                                <a href="#">Дэмисезон</a>
+                                <a href="#">Лето</a>
+                                <a href="#">Зима</a>
+                            </div>
+                        </li>
                     </div>
-                    <div class="link">
-                        <li><a href="" class="sidebar__link">Пункт меню</a></li>
+                    <div class="dropdown link">
+                        <li>
+                            <button onclick="myFunction3()" class="dropbtn link">Для детей</button>
+                            <div id="myDropdown3" class="dropdown-content">
+                                <a href="#">Дэмисезон</a>
+                                <a href="#">Лето</a>
+                                <a href="#">Зима</a>
+                            </div>
+                        </li>
                     </div>
-                    <div class="link">
-                        <li><a href="" class="sidebar__link">Пункт меню</a></li>
+                    <div class="dropdown link">
+                        <li>
+                            <button onclick="myFunction4()" class="dropbtn link">Коллекции</button>
+                            <div id="myDropdown4" class="dropdown-content">
+                                <a href="#">Дэмисезон</a>
+                                <a href="#">Лето</a>
+                                <a href="#">Зима</a>
+                            </div>
+                        </li>
                     </div>
-                    <div class="link">
-                        <li><a href="" class="sidebar__link">Пункт меню</a></li>
+                    <div class="dropdown link">
+                        <li>
+                            <button onclick="myFunction5()" class="dropbtn link ">Скидки</button>
+                            <div id="myDropdown5" class="dropdown-content">
+                                <a href="#">Для мужчин</a>
+                                <a href="#">Для женщин</a>
+                                <a href="#">Для детей</a>
+                            </div>
+                        </li>
                     </div>
                 </ul>
             </nav>
@@ -149,6 +185,10 @@
             <div class="footer__text">Dmitry Goldobin</div>
         </footer>
     </div>
+    <script src="js/index.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/number_mask.js"></script>
 </body>
 
 </html>
