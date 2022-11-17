@@ -9,6 +9,7 @@
 	<title>GRID LAYOUT - Практика</title>
 	<!-- Подключаем CSS -->
 	<link rel="stylesheet" href="css/style.css">
+
 	<!-- Кодировка страницы -->
 	<meta charset="UTF-8">
 	<!-- Адаптив -->
@@ -53,20 +54,55 @@
 		<aside class="sidebar">
 			<nav class="sidebar__menu">
 				<ul class="sidebar__list">
-					<div class="link">
-						<li><a href="" class="sidebar__link">Пункт меню</a></li>
+					<div class="dropdown link">
+						<li>
+							<button onclick="myFunction1()" class="dropbtn link">Dropdown</button>
+							<div id="myDropdown1" class="dropdown-content">
+								<a href="#">Link 1</a>
+								<a href="#">Link 2</a>
+								<a href="#">Link 3</a>
+							</div>
+						</li>
 					</div>
-					<div class="link">
-						<li><a href="" class="sidebar__link">Пункт меню</a></li>
+					<div class="dropdown link">
+						<li>
+							<button onclick="myFunction2()" class="dropbtn link">Dropdown</button>
+							<div id="myDropdown2" class="dropdown-content">
+								<a href="#">Link 1</a>
+								<a href="#">Link 2</a>
+								<a href="#">Link 3</a>
+							</div>
+						</li>
 					</div>
-					<div class="link">
-						<li><a href="" class="sidebar__link">Пункт меню</a></li>
+					<div class="dropdown link">
+						<li>
+							<button onclick="myFunction3()" class="dropbtn link">Dropdown</button>
+							<div id="myDropdown3" class="dropdown-content">
+								<a href="#">Link 1</a>
+								<a href="#">Link 2</a>
+								<a href="#">Link 3</a>
+							</div>
+						</li>
 					</div>
-					<div class="link">
-						<li><a href="" class="sidebar__link">Пункт меню</a></li>
+					<div class="dropdown link">
+						<li>
+							<button onclick="myFunction4()" class="dropbtn link">Dropdown</button>
+							<div id="myDropdown4" class="dropdown-content">
+								<a href="#">Link 1</a>
+								<a href="#">Link 2</a>
+								<a href="#">Link 3</a>
+							</div>
+						</li>
 					</div>
-					<div class="link">
-						<li><a href="" class="sidebar__link">Пункт меню</a></li>
+					<div class="dropdown link">
+						<li>
+							<button onclick="myFunction5()" class="dropbtn link ">Dropdown</button>
+							<div id="myDropdown5" class="dropdown-content">
+								<a href="#">Link 1</a>
+								<a href="#">Link 2</a>
+								<a href="#">Link 3</a>
+							</div>
+						</li>
 					</div>
 				</ul>
 			</nav>
@@ -79,6 +115,7 @@
 			<section class="content">
 				<div class="h1_header">
 					<h1>Магазин</h1>
+
 				</div>
 				<section class="content__gallery gallery">
 					<h2 class="gallery__title">Галерея</h2>
@@ -170,6 +207,10 @@
 			<div class="footer__text">Dmitry Goldobin</div>
 		</footer>
 	</div>
+	<script src="js/index.js"></script>
+	<script src="js/preloader.js"></script>
+	<script src="js/validation.js"></script>
+	<script src="js/number_mask.js"></script>
 </body>
 
 </html>
